@@ -1,16 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
+    <!-- 
     Author:  Magdalena Frackiewicz
     Project: A Tour Around Poland
 	
 	All rights reserved.
 -->
 <head>
-    <meta charset="UTF-8">
-	<title>A Tour Around Poland</title>
-<body>A Tour Arund POland</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;
+    margin: 0;}
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    background-color: rgb(185, 230, 225);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+    }
+    
+    * {
+    box-sizing: border-box;
+    }
+    
+    img {
+    vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+    position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    }
+    
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+    float: left;
+    width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+    opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+    opacity: 1;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
 </head>
-</html>
+<body>
+
+<h1 style="text-align: center; background-color: thistle;">A Tour Around Poland</h1>
+
+
+<div class="main">
+    <h2 style= font-size:100%>Poland is my motherland and it is very beautifull. By visiting Poland you can experience all four season depends on the months. Poland offeres lots of 
+        beautifull skylines that differes in color in each season. If you like water you can either visit northern cities such as Gdansk and swim in the 
+        Baltic sea or you can travel deeper into central Poland and kayaking on many rivers and lakes. If you like hiking the best place would be Carpathian 
+        Mountains located in the south part of Poland. Every big city offers different attractions, historical places and buildings. Also, I could not forget 
+        about delicious food. Each part of Poland has 
+        own traditional dishes that noone can miss. 
+    </h2>
+    <h3>History Overview</h3>
+    <p>Poland is a country located in Central Europe. It is divided into 16 administrative  provinces, 
+        covering an area of 312,696 km2 (120,733 sq mi), and has a largely temperate seasonal climate. Poland has a population of nearly 38.5 million 
+        people, and is the fifth-most populous member state of the European Union.Warsaw is the nation's capital and largest metropolis. Other major 
+        cities include Kraków, Łódź, Wrocław, Poznań, Gdańsk, and Szczecin. Poland's territory extends from the Baltic Sea in the north to the Sudetes and 
+        Carpathian Mountains in the south. The country is bordered by Lithuania and Russia (Kaliningrad Oblast) to the northeast, Belarus and Ukraine to the 
+        east, Slovakia and the Czech Republic to the south, and Germany to the west.</p>
+    <h4>To learn more about must see cities scroll down to the tab bar. </h4>
+    <h5 style="text-align:center">Gallery</h5>
+      
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="poland-map.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="warsaw.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="krakow.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="gdansk.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="morskie-oko.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="augustow.jpg" style="width:100%">
+          </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="poland-map.jpg" style="width:100%" onclick="currentSlide(1)" alt="Map of Poland">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="warsaw.jpg" style="width:100%" onclick="currentSlide(2)" alt="Warsaw">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="krakow.jpg" style="width:100%" onclick="currentSlide(3)" alt="Krakow">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gdansk.jpg" style="width:100%" onclick="currentSlide(4)" alt="Gdansk">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="morskie-oko.jpg" style="width:100%" onclick="currentSlide(5)" alt="Morskie-Oko">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="augustow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Augustow">
+          </div>     
+        </div>
+      </div>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Warsaw')">Warsaw</button>
+  <button class="tablinks" onclick="openCity(event, 'Augustow')">Augustow</button>
+  <button class="tablinks" onclick="openCity(event, 'Krakow')">Krakow</button>
+</div>
+
+<div id="Warsaw" class="tabcontent">
+  <h3>Warsaw - The Capitol of Poland</h3>
+  <p>Warsaw is the capitol of Poland and it is the biggest city in the country. Warsaw is locatated on the east-central part of the country along Vistula River.
+    Warsaw is the political centre of the country. All state agencies are located in the city, including the Polish Parliament, the Presidential Office,
+    the Supreme Court, Warsaw Stock Exchange nad the National Polish Bank. Warsaw is also a home of Frontex agency which is The European Border and Coast 
+    Guard Agency. The tallest building in Poland is PKiN, located in Warsaw and its height is 237m. Palace of Culture and Science was invented by Jozef Stalin. 
+    Constructed in 1955, it houses various public and cultural institutions such as cinemas, theatres, libraries, sports clubs, university faculties and 
+    authorities of the Polish Academy of Sciences. Since 2007 it has been enlisted in the Registry of Objects of Cultural Heritage.
+    he Palace of Culture and Science is a highly controversial building for some, and is often viewed as a reminder of Soviet influence over the 
+    Polish People's Republic, especially due to its construction during mass violations of human rights under Joseph Stalin.</p>
+
+    <p></p><b>Restaurants:</b></p>
+    <p><b>1. NINE'S:</b></p>
+    In 2020 famous polish football player Rober Lewandowski openned own restaurant/sport bar "NINE'S." NINES is not a random name. The number nine dominates inside 
+    the restaurant due to Lewandowski plays with number nine. The restaurants offers bawarian pretzels in shape of number nine. The restaurants is located on four levels and offers four different concepts and experience. 
+    The first two floors offers America, Asian, adn Polish cusine. The third and fourth floor is used as an event lounge with telescopic grandstands and a 
+    giant screne, and a collection of legendary objects related to the history of sport. 
+    <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+    <li>For more information, menue, and prices visit: <a href="https://nines.com.pl">NINE'S</a></li>
+    <p><b>2. Falla Warszawa</b></p>
+    Falla is located in the heart of the old town, close to the Royal Route in Warsaw. This cozy restaurant offers modern plant cuisine based on recipes from 
+    the Middle East. Here you can try hummus, different vegetarian wraps, falafels, and many more! It can be a perfect place to rest for a while after walking 
+    in the city or quickly grab some lunch during your travel.
+    <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+    <li>For more information, menue, and prices visit: <a href="https://fallawege.pl/">Fallawege</a></li>
+    <p><b>3. Manekin</b></p>
+    Naleśniki, the Polish name for crepes, are one of the most popular dishes in Poland, present in most families from time to time. Here, in Manekin, located on 
+    the Constitution Square, you can try virtually all possible variations of this dish - savory and sweet ones, with different sauces, vegetarian or not, also 
+    pancakes, desserts, and soups...Everything you need to be happy!
+    <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+    <li>For more information, menue, and prices visit: <a href="https://manekin.pl/64/warszawa-lokal"></a>Manekin</li>
+    <p><b>4. Krowawarzywa</b></p>
+    This restaurant serves vegetarian food but even vegans can find something like vegan burgers or wraps. 
+    <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+    <li>For more information, menue, and prices visit: <a href="https://krowarzywa.pl/en/">Krowawarzywa</a></li>
+     
+   
+</p>
+</div>
+
+<div id="Augustow" class="tabcontent">
+  <h3>Augustow</h3>
+  <p>Augustow is my home town and it is a resort town in northeastern Poland. It is known for its therapeutic spas. Flanked by lakes, the town also borders 
+      the Augustow Primeval Forest. At the junction of the river and the Augustow Canal, the Augustow Canal Museum traces the waterway's 19th-century
+      origins as a trade route. Forests and wetlands covers Biebrza National Park to the southh and Wigry National Park north of town. One of the traditional dishes
+      are kartacze and potato babka. One of the popular regional cakes are sekacz and mrowisko. Augustow is a perfect place for kayaking, sailing, water skiing or 
+      hiking. In 2014 Augustow was honored as a "Nicest City in Poland." 
+  </p> 
+  <video width="500" height="240"
+  controls>
+    <source src="MILKA.mp4"
+  type="video/mp4">
+
+</video>
+</div>
+
+<div id="Krakow" class="tabcontent">
+  <h3>Krakow</h3>
+  <p>Krakow is a city in the southern Poland. Krakow is known for well-preserved medival core and Jewish quarter. In 1978, the entire old town of Krakow 
+      was named a UNESCO World Heritage Site. The Main Market Square was built in the 13th century and it is the largest medival market square in Europe. 
+      St. Marys Basilica contain most elaborate Ghotic altarpiece in Europe. Wawel Castle and Wawel Cathedral are must see attractions. 
+  </p>
+  <img src="wawel.jpg" class="center">
+  <img src="krakowNight.jpg"  class="center">
+  <img src="kraków2.jpg"  class="center">
+ 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+   
+</body>
+</html> 
+
+
+
