@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Magdalena Frackiewicz
+    Project: A Tour Around Poland
+	
+	All rights reserved.
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Augustow</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+    }
+    
+    /* Header/Blog Title */
+    .header {
+        padding: 50px;
+        text-align: center;
+        background: white;
+        background-image: url("augpan.jpg");
+        
+    }
+    
+    .header h1 {
+        font-size: 50px;
+    }
+    
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+    }
+    
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+    
+    /* image */
+    .image1 {
+        background-color: #aaa;
+        background-image: url("aug.jpg");
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+        }
+    }
+    
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+        .topnav a {
+        float: none;
+        width: 100%;
+        }
+    }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Augustow</h1>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+    <div class="card">
+        <h2>Augustow</h2>
+        <div class="image1" style="height: 100px;"></div>
+        <p>Augustow is my home town and it is a resort town in northeastern Poland. It is known for its therapeutic spas. Flanked by lakes, the town also borders 
+            the Augustow Primeval Forest. At the junction of the river and the Augustow Canal, the Augustow Canal Museum traces the waterway's 19th-century
+            origins as a trade route. Forests and wetlands covers Biebrza National Park to the south and Wigry National Park north of town. One of the traditional dishes
+            are kartacze and potato babka. One of the popular regional cakes are sekacz and mrowisko. Augustow is a perfect place for kayaking, sailing, water skiing or 
+            hiking. In 2014 Augustow was honored as a "Nicest City in Poland" and video was made to promote Augustow. Click on the link to watch the video. 
+        <a href="https://vimeo.com/101077762">Augustow-Milka</a></p>
+        
+    </div>
+    <div class="card">
+      </div>
+        <h2>Restaurants</h2>
+        <div class="row">
+            <div class="column">
+              <img src="kartacze.jpg" alt="nines" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="sekacz.jpg" alt="pierogi" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="babka.jpg" alt="vege" style="width:100%">
+            </div>
+        <p><b>1. Ogrodek pod Jabloniami:</b></p>
+        The restaurant was opened in 2010 and is located along the Netta River. You can enjoy delicious food and amazing views. Above the restaurant there is a
+        guesthouse so you can spend the night and enjoy beautiful view.  
+        <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+        <li>For more information, menue, and prices visit: <a href="https://www.podjabloniami.pl/">Jablonie</a></li>
+        <p><b>2. Szuflada Bistro</b></p>
+        Bistro Szuflada is a place for those who are looking for the kitchen based on local products like cheese made in Korycin, meats, silages and preserves 
+        made by the owners. They specialize in a healthy approach to the kitchen. Their homemade drinks are interesting combinations of flavors of herbs and even 
+        vegetables. Beer lovers will also find their shelf in the fridge, they have a large selection of craft and regional bottles of beers from all over Poland. 
+        In the evenings, mainly on the lower hall in the building, they often organize culture events for our guests. Concerts, stand-ups and theater performances 
+        take place in an intimate environment.
+        <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+        <li>For more information, menue, and prices visit: <a href="https://szuflada.augustow.pl/language/en/">Szuflada</a></li>
+        <p><b>3. Kaktusik</b></p>
+        Kaktusik restauratn is located nearby Augustowski Canal. It is a unique place where you can relax in their garden and spend the night in their guesthouse
+        How you want to spent time over there that is up to you. You can either be in the hot sauna or simply enjoying fresh air in the garden.In the garden there 
+        is a playground as well as a secluded spot for adults all surrounded by beautiful flowers, trees and ponds.
+        <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+        <li>For more information, menue, and prices visit: <a href="http://kaktusik.augustow.pl/en/home/"></a>Kaktusik</li>
+        <p><b>4. Pizzeria DaGrasso</b></p>
+        The restaurant offers 36 differnt kind of pizza that ranges between different kind of meat to vegetarian type. However, if you tired of pizza yu can order
+        different pastas, salads or burgers. All perfectly made.  
+        <ul style="list-style-type:square; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:130%;color: rgb(110, 36, 76);"></ul>
+        <li>For more information, menue, and prices visit: <a href="https://dagrasso.pl/augustow">DaGrasso</a></li>
+    </div>
+    </div>
+    <div class="rightcolumn">
+    <div class="card">
+        <div class="flag" style="height:50px;"></div>
+    </div>
+    <div class="card">
+        <h3>Places to visit</h3>
+        <ul>
+            <li>Augustow Canal</li>
+            <li>Lake Studzieniczne </li>
+            <li>Zygmunt August Market</li>
+            <li>Electric water skiing</li>
+            <li>Lemu Park Augustow</li>
+            <li>Lakes there is 9 of them</li>
+            <li>Bialowieza Forest</li>
+            <li>Bulwary</li>
+            <li>Puszcza Augustowska</li>
+            <li>Old Town Market Square</li>
+            <li>Biebrzanski National Park</li>
+        </ul>
+    </div><br/>
+
+    <div class="gallery">
+        <a target="_blank" href="biebrza.jpg">
+          <img src="biebrza.jpg" alt="Cinque Terre" class="center">
+        </a>
+        <div class="desc">Biebrza National Park</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="wyciag.jpg">
+          <img src="wyciag.jpg" alt="Forest" class="center">
+        </a>
+        <div class="desc">Water Ski</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="bulwary.jpg">
+          <img src="bulwary.jpg" alt="Northern Lights" class="center">
+        </a>
+        <div class="desc">Bulwary</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="bialowieza.jpg">
+          <img src="bialowieza.jpg" alt="Mountains" class="center">
+        </a>
+        <div class="desc">Bialowieza National Park</div>
+      </div>
+
+</body>
+</html>
